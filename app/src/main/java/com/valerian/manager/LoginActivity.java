@@ -15,14 +15,14 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        ((View)findViewById(R.id.login_button)).setOnClickListener(this::Login);
         usernameText = (EditText) findViewById(R.id.login_edittext_username);
-
+        ((View)findViewById(R.id.login_button)).setOnClickListener(this::Login);
     }
 
     public void Login(View view){
-        if(usernameText.getText().toString()=="joao")
-            new Handler().postDelayed(() -> startActivity(new Intent(getApplicationContext(),HomeActivity.class)),1000);
+        String username=usernameText.getText().toString();
+        if(username.equals("joao"))
+            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
         else usernameText.setError(getString(R.string.login_failed));
     }
 }

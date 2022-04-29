@@ -10,6 +10,6 @@ public class Partner {
    public String cargo;
    public String telefone;
    public String email;
-   public String senha,
+   public String senha;
 
 }

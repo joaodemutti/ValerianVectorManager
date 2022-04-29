@@ -1,5 +1,5 @@
 package com.valerian.manager.oop.recorder;
-
+import  com.valerian.manager.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;

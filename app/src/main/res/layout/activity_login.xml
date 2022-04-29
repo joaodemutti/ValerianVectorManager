@@ -5,18 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_padding"
     tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/login_image_logo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/login_logo_margintop"
+        android:layout_marginBottom="@dimen/login_logo_marginbottom"
+        android:layout_height="@dimen/login_logo_height"
+        android:contentDescription="@string/valerian_vector"
+        android:src="@drawable/valerian_logotag_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginBottom="@dimen/login_welcome_marginBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="@dimen/login_welcome_size" />
+
+    <TextView
+        android:id="@+id/login_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_label_margin"
+        android:text="@string/username"  />
 
     <EditText
         android:id="@+id/login_edittext_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/prompt_username"/>
+        android:hint="@string/prompt_username"
+        android:inputType="textPersonName"
+        />
 
-    <Button
-        android:id="@+id/login_button"
+
+    <TextView
+        android:id="@+id/login_text_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_label_margin"
+        android:layout_marginTop="@dimen/login_label_marginTop"
+        android:text="@string/prompt_password"  />
+
+    <EditText
+        android:id="@+id/login_edittext_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/login_button"
+        style="@style/Theme.ValerianVectorManager.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginTop="@dimen/login_button_marginTop"
         android:text="@string/login" />
+
 
 </LinearLayout>

@@ -3,6 +3,8 @@ package com.valerian.manager.oop;
 //cliente:
 //Nome, endereço, data nascimento, Cpf, tell, cep.
 
+import java.util.Date;
+
 public class Client {
 
     public String primarykey;

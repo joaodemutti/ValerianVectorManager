@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:width="@dimen/home_buttons_image_size" android:drawable="@drawable/client" android:height="@dimen/home_buttons_image_size"/>
+</layer-list>

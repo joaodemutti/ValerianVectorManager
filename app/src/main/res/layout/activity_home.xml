@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/home_image_logo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/home_logo_margintop"
+        android:layout_marginBottom="@dimen/home_logo_marginbottom"
+        android:layout_height="@dimen/home_logo_height"
+        android:contentDescription="@string/valerian_vector"
+        android:src="@drawable/valerian_logo"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_background"
+        android:columnCount="3"
+        android:paddingHorizontal="@dimen/home_grid_paddinghorizontal"
+        android:paddingTop="@dimen/home_grid_paddingtop">
+
+        <Button
+            android:id="@+id/home_button_service"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service" />
+
+        <Button
+            android:id="@+id/home_button_client"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service" />
+
+        <Button
+            android:id="@+id/home_button_02"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service" />
+
+        <Button
+            android:id="@+id/home_button_03"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:layout_below="@+id/home_button_service"
+            android:layout_marginTop="@dimen/home_button_margintop"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service" />
+
+        <Button
+            android:id="@+id/home_button_04"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:layout_below="@+id/home_button_service"
+            android:layout_marginTop="@dimen/home_button_margintop"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service" />
+
+        <Button
+            android:id="@+id/home_button_05"
+            style="@style/Theme.ValerianVectorManager.HomeButtons"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@drawable/drawable_client"
+            android:text="@string/home_button_service"
+            android:layout_below="@+id/home_button_service"
+            android:layout_marginTop="@dimen/home_button_margintop" />
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_button_05"
+            android:layout_marginTop="@dimen/home_button_margintop">
+
+            <Button
+                android:id="@+id/home_button_06"
+                style="@style/Theme.ValerianVectorManager.HomeButtons"
+                android:drawableTop="@drawable/drawable_client"
+                android:text="@string/home_button_service" />
+
+            <Button
+                android:id="@+id/home_button_07"
+                style="@style/Theme.ValerianVectorManager.HomeButtons"
+                android:layout_marginLeft="@dimen/home_grid_marginhorizontal"
+                android:drawableTop="@drawable/drawable_client"
+                android:text="@string/home_button_service" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/white_background"/>
+
+    <item android:gravity="center" android:top="-60dp"
+        android:height="475dp"
+        android:width="750dp" android:drawable="@drawable/valerian_logotag_vertical_png_white___vertical_png_white___vertical"/>
+
+</layer-list>
